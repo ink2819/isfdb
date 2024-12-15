@@ -36,7 +36,7 @@ On the other hand, the history and contributions of women in sci-fi pulp magazin
    - I then organized publication info into a dataset called[`sisters_of_tomorrow_publications`]() using pandas, creating a separate CSV called [`pulp_publications1`]()of 576 entries, filtering for pulp magazine publications with cover images.
 
 2. **Generating Tags for Images:**
-   - I processed cover images using the [`google/vit-base-patch16-224`](https://huggingface.co/SmilingWolf/wd-v1-4-vit-tagger-v2) [`microsoft/resnet-50`](https://huggingface.co/microsoft/resnet-50), [`oschamp/vit-artworkclassifier`](https://huggingface.co/oschamp/vit-artworkclassifier)models from Hugging Face using the transformers library and generated tags for each.
+   - I processed cover images using the [`google/vit-base-patch16-224`](https://huggingface.co/SmilingWolf/wd-v1-4-vit-tagger-v2) [`microsoft/resnet-50`](https://huggingface.co/microsoft/resnet-50) [`oschamp/vit-artworkclassifier`](https://huggingface.co/oschamp/vit-artworkclassifier)models from Hugging Face using the transformers library and generated tags for each.
    - Also ran the [`wd-tagger`](https://huggingface.co/SmilingWolf/wd-v1-4-vit-tagger-v2) model (via GitHub repository [neggles/wdv3-timm](https://github.com/neggles/wdv3-timm)) to generate tags for each image. The program called for local image and could only process one at a time, so I also wrote a script to download all the images for processing and a batch processing script with python to handle local images and save outputs as CSV.
    - Then, I compiled the tag outputs from models into the publication info csv.
 
@@ -79,7 +79,7 @@ This project provides resources for additional research and applications:
 ---
 ## AI usage acknowldgement
 
-- [`google/vit-base-patch16-224`](https://huggingface.co/SmilingWolf/wd-v1-4-vit-tagger-v2), [`microsoft/resnet-50`]（https://huggingface.co/microsoft/resnet-50）, [`oschamp/vit-artworkclassifier`](https://huggingface.co/oschamp/vit-artworkclassifier), [`wd-tagger`](https://huggingface.co/SmilingWolf/wd-v1-4-vit-tagger-v2) are used for image classification or captioning.
+- [`google/vit-base-patch16-224`](https://huggingface.co/SmilingWolf/wd-v1-4-vit-tagger-v2), [`microsoft/resnet-50`](https://huggingface.co/microsoft/resnet-50), [`oschamp/vit-artworkclassifier`](https://huggingface.co/oschamp/vit-artworkclassifier), [`wd-tagger`](https://huggingface.co/SmilingWolf/wd-v1-4-vit-tagger-v2) are used for image classification or captioning.
 - [`ChatGPT4o`](https://chatgpt.com/) was used to debug D3.js and CSS issues, walk me through how to write the batch processing script for wd-tagger, taught me how to do the cute `tag` thing in markdown, and helped me generate the hyperlink formating in markdown syntax because I was too lazy to do it manually.
 
 ---
@@ -94,7 +94,11 @@ This project provides resources for additional research and applications:
 
 - Brundage, M., & Yaszek, L. (Ed.). *The Heads of Cerberus and Other Stories*. MIT Press. [LINK](https://mitpress.mit.edu/9780262549066/the-heads-of-cerberus-and-other-stories/)
 
-- AI Vision Models: [`google/vit-base-patch16-224`](https://huggingface.co/SmilingWolf/wd-v1-4-vit-tagger-v2), [`microsoft/resnet-50`]（https://huggingface.co/microsoft/resnet-50）, [`oschamp/vit-artworkclassifier`](https://huggingface.co/oschamp/vit-artworkclassifier), [`wd-tagger`](https://huggingface.co/SmilingWolf/wd-v1-4-vit-tagger-v2)
+- AI Vision Models: 
+   - [`google/vit-base-patch16-224`](https://huggingface.co/SmilingWolf/wd-v1-4-vit-tagger-v2), 
+   - [`microsoft/resnet-50`](https://huggingface.co/microsoft/resnet-50), 
+   - [`oschamp/vit-artworkclassifier`](https://huggingface.co/oschamp/vit-artworkclassifier), 
+   - [`wd-tagger`](https://huggingface.co/SmilingWolf/wd-v1-4-vit-tagger-v2)
 
 
 - Internet Speculative Fiction Database. [WEBSITE](https://www.isfdb.org/)
