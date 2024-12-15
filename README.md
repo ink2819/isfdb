@@ -1,6 +1,8 @@
 # Exploring AI Image Classification with Pulp Magazine Covers from ISFDB
 
 ## Project Description
+**currently experiencing some issues with displaying cover images hosted from [philsp.com](http://www.philsp.com/) on the site. When I tested locally the images displayed just fine. If this issue isn't fixed soon, I will host all the images elsewhere and re-link them to the page since i already have them downloaded**
+
 This project explores how different AI vision models classify visual information using pulp magazine cover art from speculative fiction pulp magazines (mostly 1920s–1950s). The interactive website of this project allows users to view data visualizations of generated tags from image-classification or captioning models such as google/vit-base-patch16-224, SmilingWolf/wd-v1-4-vit-tagger-v2. By comparing these tags between models and to the actual cover art content, users can observe the models’ inaccuracies, biases, and limitations.
 
 Additionally, the copy-writing explainations on the website also provides some insights into the contextual influences shaping each model. I paid attention to explaining how training data and creators’ positionality shape the model outputs.
