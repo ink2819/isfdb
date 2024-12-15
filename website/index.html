@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="Me">
-        <a href=""><h3>ME</h3></a>
-    </div>
     <div class="dropdown">
         <button class="dropbtn">Switch Models</button>
         <div class="dropdown-content">
             <ul id="wd14">wd14 tagger</ul>
             <ul id="google">google vit</ul>
+            <ul id="microsoft">microsoft</ul>
+            <ul id="oschamp">oschamp</ul>
         </div>
       </div>
-    <div class="pageInfo">
-    </div>
+      <div class="dropdown-left">
+        <button class="dropbtn">Model Info</button>
+        <div class="dropdown-content-left">
+            <div class="pageInfo">
+            </div>
+        </div>
+      </div>
+      <div class="dropdown-left-down">
+        <button class="dropbtn"><a href="https://github.com/ink2819/isfdb">About Project</a></button>
+        </div>
+      </div>
+      <div class="expand" id="expand"><button class="dropbtn"> + </button></div>
+      <div class="small" id="small"><button class="dropbtn"> - </button></div>
 <div class="viz">
 </div>
 <div class="info">
@@ -30,5 +40,7 @@
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="app.js"></script>
+
+
 </body>
 </html>
